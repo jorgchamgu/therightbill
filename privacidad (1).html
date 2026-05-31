@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — The Right Bill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #FFFFFF; --off-white: #F8F7F4; --ink: #0B1120;
+  --ink-mid: #3D4250; --ink-light: #878B96; --border: #E2E0DA;
+  --navy: #0B1120; --green: #14673A; --green-btn: #18784A;
+  --green-pale: #F0FDF4; --green-dark: #0A3D22;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--white); color: var(--ink);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+}
+nav {
+  background: var(--navy); padding: 0 2rem; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-weight: 800; font-size: 1rem; color: #fff; text-decoration: none; letter-spacing: -0.02em; }
+.nav-logo .dot { color: #16A34A; }
+.nav-back {
+  font-size: 0.82rem; color: rgba(255,255,255,0.5); text-decoration: none;
+  display: flex; align-items: center; gap: 0.4rem; transition: color 0.15s;
+}
+.nav-back:hover { color: #fff; }
+.nav-back svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.hero-legal {
+  background: var(--off-white); border-bottom: 1px solid var(--border);
+  padding: 3.5rem 2rem 3rem;
+}
+.hero-legal-inner { max-width: 760px; margin: 0 auto; }
+.doc-type {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.doc-type::before { content: ''; width: 20px; height: 2px; background: var(--green); display: inline-block; }
+h1 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.03em; color: var(--ink); margin-bottom: 0.75rem; }
+.meta { font-size: 0.82rem; color: var(--ink-light); }
+
+.doc-body { max-width: 760px; margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+.doc-body h2 {
+  font-size: 1.15rem; font-weight: 700; color: var(--ink);
+  margin: 2.5rem 0 0.75rem; padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.doc-body h2:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+.doc-body p { color: var(--ink-mid); margin-bottom: 1rem; }
+.doc-body ul { color: var(--ink-mid); padding-left: 1.5rem; margin-bottom: 1rem; }
+.doc-body ul li { margin-bottom: 0.4rem; }
+.doc-body strong { color: var(--ink); font-weight: 600; }
+.notice-box {
+  background: var(--green-pale); border: 1px solid rgba(20,103,58,0.18);
+  border-radius: 8px; padding: 1.25rem 1.375rem; margin-bottom: 2rem;
+}
+.notice-box p { color: var(--green-dark); margin: 0; font-size: 0.9rem; }
+.contact-block {
+  background: var(--off-white); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1.375rem 1.5rem; margin-top: 1rem;
+}
+.contact-block p { margin: 0 0 0.3rem; color: var(--ink-mid); font-size: 0.9rem; }
+.contact-block p:last-child { margin: 0; }
+.contact-block a { color: var(--green); text-decoration: none; font-weight: 600; }
+
+footer-simple {
+  background: var(--navy); padding: 1.5rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.footer-s {
+  background: var(--navy); padding: 1.5rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 0.75rem; border-top: 1px solid rgba(255,255,255,0.07);
+}
+.footer-s-logo { font-weight: 800; font-size: 0.9rem; color: rgba(255,255,255,0.5); letter-spacing: -0.02em; }
+.footer-s-logo .dot { color: #16A34A; }
+.footer-s-copy { font-size: 0.75rem; color: rgba(255,255,255,0.28); }
+@media (max-width: 600px) {
+  .doc-body { padding: 2.5rem 1.25rem 4rem; }
+  .hero-legal { padding: 2.5rem 1.25rem 2rem; }
+  nav { padding: 0 1.25rem; }
+  .footer-s { padding: 1.25rem; flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">The <span class="dot">Right</span> Bill</a>
+  <a href="index.html" class="nav-back">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Volver
+  </a>
+</nav>
+
+<div class="hero-legal">
+  <div class="hero-legal-inner">
+    <div class="doc-type">Documento legal</div>
+    <h1>Política de Privacidad</h1>
+    <p class="meta">Última actualización: 28 de mayo de 2026 &nbsp;·&nbsp; Vigente desde: 28 de mayo de 2026</p>
+  </div>
+</div>
+
+<div class="doc-body">
+
+  <div class="notice-box">
+    <p><strong>Resumen:</strong> The Right Bill recoge únicamente los datos estrictamente necesarios para prestar el servicio de negociación de facturas. No vendemos datos personales a terceros. Puedes solicitar el acceso, rectificación o eliminación de tus datos escribiendo a <a href="mailto:sales@therightbill.com" style="color:var(--green-dark);font-weight:600;">sales@therightbill.com</a>.</p>
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>El responsable del tratamiento de los datos personales recogidos a través de este sitio web y en el marco de los servicios ofrecidos es:</p>
+  <div class="contact-block">
+    <p><strong>Jorge Chamorro</strong>, actuando bajo el nombre comercial <strong>The Right Bill</strong></p>
+    <p>650 NE 2nd Avenue, Miami, Florida 33132, EE.UU.</p>
+    <p>Correo electrónico: <a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p>Teléfono: <a href="tel:+17866900756">+1 (786) 690-0756</a></p>
+  </div>
+  <p>The Right Bill opera como persona física bajo nombre comercial (sole proprietor / DBA) conforme a la legislación del Estado de Florida, EE.UU. No existe una entidad jurídica separada.</p>
+
+  <h2>2. Datos que recopilamos y por qué</h2>
+  <p>Recopilamos exclusivamente los datos que el usuario facilita de manera voluntaria al utilizar el formulario de contacto o al contratar nuestros servicios de negociación. Estos datos son:</p>
+  <ul>
+    <li><strong>Nombre y apellidos:</strong> para identificar al cliente y dirigirnos a él de forma personalizada.</li>
+    <li><strong>Número de teléfono:</strong> para contactarle en el plazo indicado y coordinar la negociación.</li>
+    <li><strong>Proveedor de telecomunicaciones actual:</strong> para analizar el margen de negociación disponible.</li>
+    <li><strong>Importe de la factura mensual aproximado:</strong> para realizar la estimación de ahorro.</li>
+    <li><strong>Dirección de correo electrónico</strong> (cuando se facilite voluntariamente): para envío de comunicaciones relacionadas con el servicio.</li>
+    <li><strong>Información de factura o contrato</strong> (si el cliente la comparte voluntariamente): para analizar los cargos negociables. Esta información nunca se comparte con terceros.</li>
+  </ul>
+  <p><strong>No recopilamos</strong> números de la Seguridad Social, datos bancarios, contraseñas ni credenciales de acceso a cuentas de proveedores. Cuando actuamos como agente autorizado del cliente para llamar al proveedor, lo hacemos exclusivamente por teléfono, identificándonos como representantes del cliente con su autorización expresa.</p>
+
+  <h2>3. Base jurídica del tratamiento</h2>
+  <p>El tratamiento de los datos personales se basa en las siguientes bases jurídicas:</p>
+  <ul>
+    <li><strong>Ejecución del contrato de servicio:</strong> los datos son necesarios para prestar el servicio de negociación solicitado por el usuario.</li>
+    <li><strong>Consentimiento del interesado:</strong> al cumplimentar el formulario de contacto, el usuario presta su consentimiento expreso para que sus datos sean tratados con la finalidad indicada.</li>
+    <li><strong>Interés legítimo:</strong> para comunicaciones de seguimiento directamente relacionadas con el encargo aceptado.</li>
+  </ul>
+
+  <h2>4. Cómo usamos sus datos</h2>
+  <p>Los datos recogidos se utilizan exclusivamente para:</p>
+  <ul>
+    <li>Contactar al usuario en el plazo comprometido (máximo 24 horas) para iniciar el análisis de su factura.</li>
+    <li>Llevar a cabo la negociación con el proveedor de telecomunicaciones del usuario, actuando como su agente autorizado.</li>
+    <li>Comunicar al usuario el resultado de la negociación y, en su caso, la factura de honorarios correspondiente.</li>
+    <li>Atender consultas, reclamaciones o solicitudes del usuario relacionadas con el servicio prestado.</li>
+  </ul>
+  <p><strong>No utilizamos los datos para marketing de terceros, publicidad comportamental ni creación de perfiles.</strong></p>
+
+  <h2>5. Compartición de datos con terceros</h2>
+  <p>The Right Bill no vende, alquila ni cede datos personales a terceros con fines comerciales. Los datos únicamente pueden ser compartidos en los siguientes supuestos limitados:</p>
+  <ul>
+    <li><strong>Con el proveedor de telecomunicaciones del usuario</strong>, cuando sea estrictamente necesario para ejecutar la negociación y siempre con la autorización expresa del cliente.</li>
+    <li><strong>Con proveedores de servicios técnicos</strong> (alojamiento web, correo electrónico) que actúen como encargados del tratamiento bajo acuerdos de confidencialidad y solo con acceso a los datos mínimos indispensables.</li>
+    <li><strong>Por obligación legal:</strong> cuando una autoridad competente lo requiera mediante mandato judicial o requerimiento legal vinculante.</li>
+  </ul>
+
+  <h2>6. Plazo de conservación de los datos</h2>
+  <p>Los datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recogidos y durante los plazos legales aplicables:</p>
+  <ul>
+    <li>Datos de clientes con los que se ha prestado el servicio: <strong>4 años</strong> desde la finalización del servicio, conforme a los plazos de prescripción de acciones civiles en Florida (Fla. Stat. § 95.11).</li>
+    <li>Datos de contactos que no se convirtieron en clientes: <strong>12 meses</strong> desde el primer contacto, salvo que el usuario solicite su eliminación antes.</li>
+    <li>Datos de facturación: el tiempo que exija la normativa fiscal aplicable.</li>
+  </ul>
+  <p>Transcurridos estos plazos, los datos serán eliminados o anonimizados de forma irreversible.</p>
+
+  <h2>7. Derechos del usuario</h2>
+  <p>El usuario tiene derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a los datos personales que obran en nuestro poder.</li>
+    <li><strong>Rectificar</strong> datos inexactos o incompletos.</li>
+    <li><strong>Eliminar</strong> sus datos («derecho al olvido»), cuando ya no sean necesarios para la finalidad con que fueron recogidos.</li>
+    <li><strong>Limitar</strong> el tratamiento en los supuestos legalmente previstos.</li>
+    <li><strong>Oponerse</strong> al tratamiento basado en interés legítimo.</li>
+    <li><strong>Retirar el consentimiento</strong> en cualquier momento, sin que ello afecte a la licitud del tratamiento previo.</li>
+    <li><strong>Portabilidad</strong> de sus datos en formato legible por máquina.</li>
+  </ul>
+  <p>Para ejercer cualquiera de estos derechos, el usuario puede enviar una solicitud escrita a:</p>
+  <div class="contact-block">
+    <p><a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p>Atención: Solicitud de derechos de privacidad — The Right Bill</p>
+  </div>
+  <p>Responderemos en un plazo máximo de <strong>30 días naturales</strong> desde la recepción de la solicitud.</p>
+
+  <h2>8. Seguridad de los datos</h2>
+  <p>The Right Bill aplica medidas técnicas y organizativas razonables para proteger los datos personales contra el acceso no autorizado, la pérdida, la destrucción o el tratamiento ilícito. Estas medidas incluyen la transmisión cifrada de datos (HTTPS), el acceso restringido a la información del cliente y la eliminación segura de documentación sensible una vez concluido el encargo.</p>
+  <p>No obstante, ningún sistema de transmisión por Internet es completamente seguro. The Right Bill no puede garantizar la seguridad absoluta de la información transmitida a través de Internet.</p>
+
+  <h2>9. Cookies y tecnologías de seguimiento</h2>
+  <p>Este sitio web utiliza <strong>Google Analytics 4</strong> (GA4), un servicio de análisis web proporcionado por Google LLC, para recopilar información anónima sobre el uso del sitio (páginas visitadas, duración de la sesión, país de acceso). Google Analytics utiliza cookies propias para este fin. Los datos se transmiten a servidores de Google en EE.UU. y se tratan de conformidad con la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;">Política de Privacidad de Google</a>. The Right Bill no vincula los datos de Google Analytics con datos personales identificables.</p>
+  <p>Adicionalmente, el sitio puede utilizar cookies técnicas estrictamente necesarias para el correcto funcionamiento de la página (por ejemplo, para recordar la preferencia de idioma del usuario). No se utilizan cookies de terceros con fines publicitarios ni de seguimiento comportamental más allá de Google Analytics.</p>
+  <p><strong>Usuarios de California (CCPA):</strong> De conformidad con la California Consumer Privacy Act, los residentes de California tienen derecho a solicitar información sobre los datos personales que recopilamos, a solicitar su eliminación y a optar por no participar en la «venta» de datos personales. The Right Bill no vende datos personales. Para ejercer sus derechos bajo la CCPA, puede escribirnos a <a href="mailto:sales@therightbill.com" style="color:var(--green);font-weight:600;">sales@therightbill.com</a> indicando en el asunto «Solicitud CCPA».</p>
+  <p>El usuario puede configurar su navegador para rechazar o eliminar cookies, o utilizar herramientas como <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;">Google Analytics Opt-out</a> para desactivar el seguimiento de GA4. La desactivación de cookies técnicas puede afectar al funcionamiento de algunas funcionalidades del sitio.</p>
+
+  <h2>10. Usuarios menores de edad</h2>
+  <p>Los servicios de The Right Bill están destinados exclusivamente a mayores de 18 años. No recopilamos conscientemente datos de menores de edad. Si tuviéramos conocimiento de que un menor ha facilitado datos sin el consentimiento de sus tutores, procederemos a eliminarlos de inmediato.</p>
+
+  <h2>11. Transferencias internacionales de datos</h2>
+  <p>Los datos personales se almacenan y tratan en servidores ubicados en los Estados Unidos. The Right Bill no realiza transferencias internacionales de datos personales a países que no ofrezcan un nivel de protección adecuado. En caso de que el uso de proveedores tecnológicos implique alguna transferencia fuera de EE.UU., nos aseguraremos de que existan las salvaguardas contractuales oportunas.</p>
+
+  <h2>12. Cambios en esta política</h2>
+  <p>The Right Bill se reserva el derecho a modificar esta Política de Privacidad para adaptarla a cambios legislativos, jurisprudenciales o de la práctica del negocio. En caso de cambios sustanciales, se notificará a los usuarios a través del sitio web o por correo electrónico si dispusiéramos de su dirección. La fecha de «última actualización» que figura al inicio del documento reflejará siempre la versión vigente.</p>
+
+  <h2>13. Legislación aplicable y jurisdicción</h2>
+  <p>Esta Política de Privacidad se rige por la legislación del Estado de Florida y la legislación federal de los Estados Unidos aplicable. Para cualquier controversia derivada de su interpretación o aplicación, las partes se someten a los tribunales competentes del Condado de Miami-Dade, Florida, con renuncia expresa a cualquier otro fuero que pudiera corresponderles.</p>
+
+  <h2>14. Contacto</h2>
+  <p>Para cualquier consulta relacionada con esta Política de Privacidad o con el tratamiento de sus datos personales, puede contactar con nosotros en:</p>
+  <div class="contact-block">
+    <p><strong>The Right Bill</strong> (Jorge Chamorro, propietario)</p>
+    <p>650 NE 2nd Avenue, Miami, Florida 33132, EE.UU.</p>
+    <p><a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p><a href="tel:+17866900756">+1 (786) 690-0756</a></p>
+  </div>
+
+</div>
+
+<div class="footer-s">
+  <div class="footer-s-logo">The <span class="dot">Right</span> Bill</div>
+  <div class="footer-s-copy">© 2026 The Right Bill · Miami, Florida</div>
+</div>
+
+</body>
+</html>
