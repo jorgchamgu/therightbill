@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Notice / Aviso Legal — The Right Bill</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF;--off-white:#F8F7F4;--ink:#0B1120;--ink-mid:#3D4250;
+  --ink-light:#878B96;--border:#E2E0DA;--border-mid:#D0CEC7;--navy:#0B1120;
+  --green:#14673A;--green-btn:#18784A;--green-pale:#F0FDF4;--green-dark:#0A3D22;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--white);color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+
+/* LANG */
+.t{display:none !important;}
+.len .en{display:revert !important;}
+.les .es{display:revert !important;}
+.len span.en,.les span.es{display:inline !important;}
+
+nav{background:var(--navy);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.nav-logo{font-weight:800;font-size:1rem;color:#fff;text-decoration:none;letter-spacing:-0.02em;}
+.nav-logo .dot{color:#16A34A;}
+.nav-right{display:flex;align-items:center;gap:1rem;}
+.nav-back{font-size:0.82rem;color:rgba(255,255,255,0.5);text-decoration:none;display:flex;align-items:center;gap:0.4rem;transition:color 0.15s;}
+.nav-back:hover{color:#fff;}
+.nav-back svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.lang-pill{display:flex;border:1px solid rgba(255,255,255,.2);border-radius:5px;overflow:hidden;}
+.lbtn{padding:.28rem .65rem;font-size:.72rem;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:.04em;border:none;background:transparent;color:rgba(255,255,255,.45);cursor:pointer;transition:all .15s;}
+.lbtn.on{background:rgba(255,255,255,.15);color:#fff;}
+
+.hero-legal{background:var(--off-white);border-bottom:1px solid var(--border);padding:3.5rem 2rem 3rem;}
+.hero-legal-inner{max-width:760px;margin:0 auto;}
+.doc-type{font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem;}
+.doc-type::before{content:'';width:20px;height:2px;background:var(--green);display:inline-block;}
+h1{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-0.03em;color:var(--ink);margin-bottom:0.75rem;}
+.meta{font-size:0.82rem;color:var(--ink-light);}
+
+.doc-body{max-width:760px;margin:0 auto;padding:3.5rem 2rem 5rem;}
+.doc-body h2{font-size:1.15rem;font-weight:700;color:var(--ink);margin:2.5rem 0 0.75rem;padding-top:2.5rem;border-top:1px solid var(--border);}
+.doc-body h2:first-child{border-top:none;padding-top:0;margin-top:0;}
+.doc-body p{color:var(--ink-mid);margin-bottom:1rem;}
+.doc-body ul{color:var(--ink-mid);padding-left:1.5rem;margin-bottom:1rem;}
+.doc-body ul li{margin-bottom:0.4rem;}
+.doc-body strong{color:var(--ink);font-weight:600;}
+.doc-body a{color:var(--green);font-weight:600;text-decoration:none;}
+.doc-body a:hover{text-decoration:underline;}
+.notice-box{background:var(--green-pale);border:1px solid rgba(20,103,58,0.18);border-radius:8px;padding:1.25rem 1.375rem;margin-bottom:2rem;}
+.notice-box p{color:var(--green-dark);margin:0;font-size:0.9rem;}
+.contact-block{background:var(--off-white);border:1px solid var(--border);border-radius:8px;padding:1.375rem 1.5rem;margin-top:1rem;}
+.contact-block p{margin:0 0 0.3rem;color:var(--ink-mid);font-size:0.9rem;}
+.contact-block p:last-child{margin:0;}
+.contact-block a{color:var(--green);text-decoration:none;font-weight:600;}
+
+.footer-s{background:var(--navy);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;border-top:1px solid rgba(255,255,255,0.07);}
+.footer-s-logo{font-weight:800;font-size:0.9rem;color:rgba(255,255,255,0.5);letter-spacing:-0.02em;}
+.footer-s-logo .dot{color:#16A34A;}
+.footer-s-copy{font-size:0.75rem;color:rgba(255,255,255,0.28);}
+
+/* WhatsApp float */
+.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45),0 2px 8px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s;color:#fff;}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,0.55),0 3px 10px rgba(0,0,0,.2);}
+.wa-float svg{width:28px;height:28px;}
+
+@media(max-width:600px){
+  .doc-body{padding:2.5rem 1.25rem 4rem;}
+  .hero-legal{padding:2.5rem 1.25rem 2rem;}
+  nav{padding:0 1.25rem;}
+  .footer-s{padding:1.25rem;flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body id="b" class="len">
+
+<nav>
+  <a href="index.html" class="nav-logo">The <span class="dot">Right</span> Bill</a>
+  <div class="nav-right">
+    <div class="lang-pill">
+      <button class="lbtn on" onclick="setL('en')">EN</button>
+      <button class="lbtn" onclick="setL('es')">ES</button>
+    </div>
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      <span class="t en">Back</span>
+      <span class="t es">Volver</span>
+    </a>
+  </div>
+</nav>
+
+<div class="hero-legal">
+  <div class="hero-legal-inner">
+    <div class="doc-type t en">Legal document</div>
+    <div class="doc-type t es">Documento legal</div>
+    <h1 class="t en">Legal Notice</h1>
+    <h1 class="t es">Aviso Legal</h1>
+    <p class="meta t en">Last updated: May 28, 2026 &nbsp;·&nbsp; Effective: May 28, 2026</p>
+    <p class="meta t es">Última actualización: 28 de mayo de 2026 &nbsp;·&nbsp; Vigente desde: 28 de mayo de 2026</p>
+  </div>
+</div>
+
+<div class="doc-body">
+
+  <!-- NOTICE BOX -->
+  <div class="notice-box t en">
+    <p><strong>Note:</strong> This Legal Notice governs access to and use of The Right Bill website. The Right Bill operates as a sole proprietor under Florida law. Please read it carefully before using this site.</p>
+  </div>
+  <div class="notice-box t es">
+    <p><strong>Nota:</strong> Este Aviso Legal regula el acceso y uso del sitio web de The Right Bill, que opera como empresario individual (sole proprietor) bajo la legislación del Estado de Florida, EE.UU. Por favor, léalo detenidamente antes de utilizar este sitio.</p>
+  </div>
+
+  <!-- 1 -->
+  <h2 class="t en">1. Website Owner Information</h2>
+  <h2 class="t es">1. Datos identificativos del titular</h2>
+  <p class="t en">This website is owned and operated by:</p>
+  <p class="t es">Este sitio web es propiedad de y está operado por:</p>
+  <div class="contact-block">
+    <p><strong class="t en">Owner:</strong><strong class="t es">Titular:</strong> Jorge Chamorro</p>
+    <p><strong class="t en">Trade name:</strong><strong class="t es">Nombre comercial:</strong> The Right Bill</p>
+    <p><strong class="t en">Legal structure:</strong><strong class="t es">Naturaleza jurídica:</strong> <span class="t en">Sole Proprietor / DBA (doing business as), organized under the laws of the State of Florida, U.S.A.</span><span class="t es">Persona física / Sole Proprietor (empresario individual), operando bajo nombre comercial (DBA) conforme a la legislación del Estado de Florida, EE.UU.</span></p>
+    <p><strong class="t en">Address:</strong><strong class="t es">Domicilio:</strong> 650 NE 2nd Avenue, Miami, Florida 33132, U.S.A.</p>
+    <p><strong class="t en">Email:</strong><strong class="t es">Correo electrónico:</strong> <a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p><strong class="t en">Phone:</strong><strong class="t es">Teléfono:</strong> <a href="tel:+17866900756">+1 (786) 690-0756</a></p>
+    <p><strong class="t en">Website:</strong><strong class="t es">Sitio web:</strong> www.therightbill.com</p>
+  </div>
+
+  <!-- 2 -->
+  <h2 class="t en">2. Scope and Purpose</h2>
+  <h2 class="t es">2. Objeto y ámbito de aplicación</h2>
+  <p class="t en">This Legal Notice governs the terms of access to and use of the website www.therightbill.com (the "Site"), owned by Jorge Chamorro doing business as The Right Bill. By accessing or browsing the Site, you fully accept all conditions set out in this Legal Notice.</p>
+  <p class="t es">El presente Aviso Legal regula las condiciones de acceso y uso del sitio web www.therightbill.com (en adelante, «el Sitio»), del que es titular Jorge Chamorro bajo el nombre comercial The Right Bill. El acceso y la navegación por el Sitio implican la aceptación expresa y plena de todas las condiciones aquí recogidas.</p>
+  <p class="t en">The Right Bill reserves the right to modify, at any time and without prior notice, the presentation, configuration, and content of this Legal Notice. The version in effect will always be the one published on the Site at the time of access.</p>
+  <p class="t es">The Right Bill se reserva el derecho a modificar, en cualquier momento y sin previo aviso, la presentación y configuración del Sitio, así como el contenido de este Aviso Legal. La versión vigente será siempre la publicada en el Sitio en el momento del acceso.</p>
+
+  <!-- 3 -->
+  <h2 class="t en">3. Conditions of Access and Use</h2>
+  <h2 class="t es">3. Condiciones de acceso y uso del Sitio</h2>
+  <p class="t en">Access to the Site is free of charge. Use of services offered through the Site may be subject to additional terms set out in the <a href="terminos.html">Terms of Use</a>.</p>
+  <p class="t es">El acceso al Sitio es gratuito. La utilización de los servicios ofrecidos a través del Sitio puede estar sujeta a condiciones particulares recogidas en los <a href="terminos.html">Términos de Uso</a>.</p>
+  <p class="t en">Users agree to make lawful and appropriate use of the Site and its content. The following are expressly prohibited:</p>
+  <p class="t es">El usuario se compromete a hacer un uso adecuado del Sitio y de sus contenidos. Queda expresamente prohibido:</p>
+  <ul class="t en">
+    <li>Using the Site for illegal purposes or in a manner contrary to applicable law, good faith, or public policy.</li>
+    <li>Reproducing, copying, distributing, transforming, or publicly communicating the Site's content without express written authorization from the owner.</li>
+    <li>Introducing or disseminating false, defamatory, fraudulent, or privacy-violating content.</li>
+    <li>Carrying out actions that could damage, disable, overload, or impair the Site or prevent its normal use by others.</li>
+    <li>Attempting to gain unauthorized access to any part of the Site or its underlying systems through hacking, credential stuffing, or similar techniques.</li>
+  </ul>
+  <ul class="t es">
+    <li>Utilizar el Sitio con fines ilegales o contrarios a la ley, la buena fe o el orden público.</li>
+    <li>Reproducir, copiar, distribuir, transformar o comunicar públicamente los contenidos del Sitio sin autorización escrita previa del titular.</li>
+    <li>Introducir o difundir contenidos falsos, difamatorios, fraudulentos o que vulneren derechos de terceros.</li>
+    <li>Llevar a cabo acciones que pudieran dañar, inutilizar, sobrecargar o deteriorar el Sitio o impedir el uso normal del mismo por otros usuarios.</li>
+    <li>Intentar acceder a partes restringidas del Sitio o a los sistemas informáticos del titular mediante técnicas de hacking u otras similares.</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2 class="t en">4. Intellectual and Industrial Property</h2>
+  <h2 class="t es">4. Propiedad intelectual e industrial</h2>
+  <p class="t en">All content on the Site, including without limitation text, graphics, photographs, design, source code, logos, trade names, and any other intellectual or industrial property elements, is owned by Jorge Chamorro or duly licensed from their respective owners.</p>
+  <p class="t es">Todos los contenidos del Sitio, incluyendo sin limitación textos, gráficos, diseño visual, código fuente, logotipos, marcas, denominaciones comerciales y cualquier otro elemento de propiedad intelectual o industrial, son propiedad de Jorge Chamorro o han sido debidamente licenciados por sus propietarios.</p>
+  <p class="t en">Any reproduction, distribution, transformation, public communication, or other form of exploitation of the Site's content, by any means, without prior written authorization from the owner is expressly prohibited.</p>
+  <p class="t es">Queda expresamente prohibida la reproducción total o parcial, distribución, transformación, comunicación pública o cualquier otra forma de explotación, por cualquier procedimiento, de los contenidos del Sitio, sin autorización escrita previa del titular.</p>
+  <p class="t en">Logos and trademarks of telecommunications providers appearing on this Site (including Comcast/Xfinity, Spectrum/Charter Communications, AT&T Inc., Verizon Communications, T-Mobile US, Inc., Cox Communications, Cricket Wireless, Metro by T-Mobile, Mint Mobile, and Vodafone Group) belong to their respective registered owners. Their appearance on the Site is solely for identification and informational purposes and does not imply any association, sponsorship, endorsement, or commercial relationship between The Right Bill and those trademark owners. The Right Bill is an independent negotiation service not affiliated with any of the listed providers.</p>
+  <p class="t es">Los logotipos y marcas de proveedores de telecomunicaciones que aparecen en el Sitio (incluyendo Comcast/Xfinity, Spectrum/Charter Communications, AT&T Inc., Verizon Communications, T-Mobile US, Inc., Cox Communications, Cricket Wireless, Metro by T-Mobile, Mint Mobile y Vodafone Group) pertenecen a sus respectivos titulares registrados. Su aparición en el Sitio tiene carácter meramente identificativo e informativo y no implica asociación, patrocinio, respaldo ni relación comercial alguna entre The Right Bill y dichas marcas. The Right Bill es un servicio de negociación independiente no afiliado a ninguno de los proveedores mencionados.</p>
+
+  <!-- 5 -->
+  <h2 class="t en">5. Disclaimer of Warranties and Liability</h2>
+  <h2 class="t es">5. Exclusión de garantías y responsabilidad</h2>
+  <p class="t en">The Site is provided "as is" and "as available" without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. The Right Bill will make reasonable efforts to maintain the Site operational but does not guarantee uninterrupted availability and shall not be liable for technical interruptions, connectivity failures, or downtime caused by circumstances beyond its reasonable control.</p>
+  <p class="t es">El Sitio se pone a disposición del usuario «tal cual» y «según disponibilidad», sin garantías de ningún tipo, expresas o implícitas. The Right Bill realizará esfuerzos razonables para mantener el Sitio operativo, pero no garantiza su disponibilidad ininterrumpida y no será responsable por interrupciones técnicas o de conectividad causadas por circunstancias ajenas a su control razonable.</p>
+  <p class="t en">The informational content on the Site is provided for general guidance only and does not constitute legal, financial, accounting, or other professional advice. For any decision requiring specialized counsel, users should consult a qualified professional licensed in the relevant jurisdiction.</p>
+  <p class="t es">Los contenidos informativos del Sitio se facilitan a título orientativo y no constituyen asesoramiento legal, financiero, contable ni de ningún otro tipo. Para cualquier decisión que requiera asesoramiento especializado, el usuario debe consultar a un profesional habilitado.</p>
+  <p class="t en">The Right Bill shall not be responsible for the content of third-party websites linked from the Site. External links are provided for informational or convenience purposes only.</p>
+  <p class="t es">The Right Bill no será responsable de los contenidos de los sitios web de terceros a los que pudiera enlazarse desde el Sitio. Los enlaces externos se facilitan únicamente por razones informativas o de utilidad para el usuario.</p>
+
+  <!-- 6 -->
+  <h2 class="t en">6. Linking Policy</h2>
+  <h2 class="t es">6. Política de enlaces (links)</h2>
+  <p class="t en">The Site may contain links to third-party websites. The Right Bill has no control over those sites or their content and assumes no responsibility for them. The inclusion of a link does not imply approval, sponsorship, or affiliation with the linked site.</p>
+  <p class="t es">El Sitio puede contener enlaces a sitios web de terceros. The Right Bill no tiene control sobre dichos sitios ni sobre sus contenidos, y no asume ninguna responsabilidad sobre los mismos. La inclusión de un enlace no implica la aprobación, patrocinio ni afiliación con el sitio enlazado.</p>
+  <p class="t en">Creating a link to the Site from another website that contains illegal, offensive, discriminatory, or reputation-damaging materials is prohibited without prior written authorization from the owner.</p>
+  <p class="t es">Queda prohibida la creación de un enlace al Sitio desde otro sitio web que contenga materiales ilegales, ofensivos, discriminatorios o que puedan dañar la reputación de The Right Bill, sin autorización previa escrita del titular.</p>
+
+  <!-- 7 -->
+  <h2 class="t en">7. Declaration of Professional Independence</h2>
+  <h2 class="t es">7. Declaración de independencia profesional</h2>
+  <p class="t en">The Right Bill acts at all times as an independent intermediary between the client and their telecommunications provider. The Right Bill is not an agent, distributor, reseller, dealer, or authorized representative of any telecommunications company. Negotiation outcomes depend entirely on each carrier's commercial policies, which are outside The Right Bill's control beyond the negotiation process itself.</p>
+  <p class="t es">The Right Bill actúa en todo momento como intermediario independiente entre el cliente y su proveedor de telecomunicaciones. The Right Bill no es agente, distribuidor, revendedor, concesionario ni representante oficial de ninguna compañía de telecomunicaciones. Los resultados de las negociaciones dependen exclusivamente de las políticas comerciales de los proveedores, que son ajenas a The Right Bill y sobre las cuales este no ejerce ningún control ni influencia más allá del proceso de negociación.</p>
+
+  <!-- 8 -->
+  <h2 class="t en">8. Disclaimer on Results</h2>
+  <h2 class="t es">8. Aviso sobre resultados</h2>
+  <p class="t en">Any savings estimates shown on the Site are projections based on historical negotiation outcomes and do not constitute a guarantee of any specific result. Each engagement is different, and actual outcomes may vary depending on the carrier, the client's current plan, account history, and the carrier's prevailing commercial policies. The Right Bill charges fees only when a real and verifiable savings is achieved.</p>
+  <p class="t es">Las estimaciones de ahorro que aparecen en el Sitio son proyecciones basadas en resultados históricos de negociaciones realizadas y no constituyen garantía de resultado alguno. Cada caso es diferente y el resultado real puede variar en función del proveedor, el plan contratado, el historial del cliente y las políticas comerciales vigentes. The Right Bill solo cobra honorarios cuando se produce un ahorro real y verificable.</p>
+
+  <!-- 9 -->
+  <h2 class="t en">9. Electronic Communications</h2>
+  <h2 class="t es">9. Comunicaciones electrónicas</h2>
+  <p class="t en">By providing your email address or phone number through the Site's forms, you expressly consent to receiving electronic communications from The Right Bill related to the service requested. You may revoke this consent at any time by emailing <a href="mailto:sales@therightbill.com">sales@therightbill.com</a> with the subject line "Unsubscribe".</p>
+  <p class="t es">Al facilitar su dirección de correo electrónico o número de teléfono a través de los formularios del Sitio, el usuario consiente expresamente recibir comunicaciones electrónicas de The Right Bill relacionadas con el servicio solicitado. El usuario puede revocar este consentimiento en cualquier momento enviando un correo a <a href="mailto:sales@therightbill.com">sales@therightbill.com</a> con el asunto «Baja de comunicaciones».</p>
+
+  <!-- 10 -->
+  <h2 class="t en">10. Severability</h2>
+  <h2 class="t es">10. Nulidad e ineficacia de las cláusulas</h2>
+  <p class="t en">If any provision of this Legal Notice is found to be wholly or partially void or unenforceable, such invalidity shall affect only that provision or the relevant part thereof, and the remainder of this Legal Notice shall continue in full force and effect as if the void provision had not been included.</p>
+  <p class="t es">Si cualquier cláusula incluida en este Aviso Legal fuese declarada total o parcialmente nula o ineficaz, tal nulidad o ineficacia afectará tan solo a dicha disposición o a la parte de la misma que resulte nula o ineficaz, subsistiendo el Aviso Legal en todo lo demás, considerándose tal disposición total o parcialmente por no incluida.</p>
+
+  <!-- 11 -->
+  <h2 class="t en">11. Governing Law and Jurisdiction</h2>
+  <h2 class="t es">11. Legislación aplicable y jurisdicción competente</h2>
+  <p class="t en">This Legal Notice and all matters relating to access to or use of the Site shall be governed by and construed in accordance with the laws of the State of Florida and applicable federal law of the United States of America. Any dispute arising out of or related to this Legal Notice shall be subject to the exclusive jurisdiction of the state and federal courts located in Miami-Dade County, Florida, and each party irrevocably submits to the personal jurisdiction of such courts.</p>
+  <p class="t es">El presente Aviso Legal y todas las cuestiones relativas al acceso o uso del Sitio se rigen e interpretan de conformidad con la legislación vigente del Estado de Florida y la legislación federal de los Estados Unidos de América. Para la resolución de cualquier controversia derivada o relacionada con el acceso o uso del Sitio, las partes se someten a la jurisdicción exclusiva de los tribunales estatales y federales del Condado de Miami-Dade, Estado de Florida, EE.UU., con renuncia expresa a cualquier otro fuero que pudiera corresponderles.</p>
+
+  <!-- 12 -->
+  <h2 class="t en">12. Contact</h2>
+  <h2 class="t es">12. Contacto</h2>
+  <p class="t en">For any questions regarding this Legal Notice, please contact:</p>
+  <p class="t es">Para cualquier consulta relativa a este Aviso Legal, puede ponerse en contacto con el titular en:</p>
+  <div class="contact-block">
+    <p><strong>The Right Bill</strong> (Jorge Chamorro, <span class="t en">owner</span><span class="t es">propietario</span>)</p>
+    <p>650 NE 2nd Avenue, Miami, Florida 33132, U.S.A.</p>
+    <p><a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p><a href="tel:+17866900756">+1 (786) 690-0756</a></p>
+  </div>
+
+</div>
+
+<div class="footer-s">
+  <div class="footer-s-logo">The <span class="dot">Right</span> Bill</div>
+  <div class="footer-s-copy">© 2026 The Right Bill · Miami, Florida</div>
+</div>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/17866900756" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+function setL(l) {
+  document.documentElement.lang = l === 'en' ? 'en-US' : 'es-US';
+  document.getElementById('b').className = l === 'en' ? 'len' : 'les';
+  document.querySelectorAll('.lbtn').forEach(b => b.classList.toggle('on', b.textContent.toLowerCase() === l));
+}
+setL('en');
+</script>
+</body>
+</html>
