@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy / Política de Privacidad — The Right Bill</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF;--off-white:#F8F7F4;--ink:#0B1120;--ink-mid:#3D4250;
+  --ink-light:#878B96;--border:#E2E0DA;--navy:#0B1120;--green:#14673A;
+  --green-btn:#18784A;--green-pale:#F0FDF4;--green-dark:#0A3D22;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--white);color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+
+/* LANG */
+.t{display:none !important;}
+.len .en{display:revert !important;}
+.les .es{display:revert !important;}
+.len span.en,.les span.es{display:inline !important;}
+
+nav{background:var(--navy);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.nav-logo{font-weight:800;font-size:1rem;color:#fff;text-decoration:none;letter-spacing:-0.02em;}
+.nav-logo .dot{color:#16A34A;}
+.nav-right{display:flex;align-items:center;gap:1rem;}
+.nav-back{font-size:0.82rem;color:rgba(255,255,255,0.5);text-decoration:none;display:flex;align-items:center;gap:0.4rem;transition:color 0.15s;}
+.nav-back:hover{color:#fff;}
+.nav-back svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.lang-pill{display:flex;border:1px solid rgba(255,255,255,.2);border-radius:5px;overflow:hidden;}
+.lbtn{padding:.28rem .65rem;font-size:.72rem;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:.04em;border:none;background:transparent;color:rgba(255,255,255,.45);cursor:pointer;transition:all .15s;}
+.lbtn.on{background:rgba(255,255,255,.15);color:#fff;}
+
+.hero-legal{background:var(--off-white);border-bottom:1px solid var(--border);padding:3.5rem 2rem 3rem;}
+.hero-legal-inner{max-width:760px;margin:0 auto;}
+.doc-type{font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem;}
+.doc-type::before{content:'';width:20px;height:2px;background:var(--green);display:inline-block;}
+h1{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-0.03em;color:var(--ink);margin-bottom:0.75rem;}
+.meta{font-size:0.82rem;color:var(--ink-light);}
+
+.doc-body{max-width:760px;margin:0 auto;padding:3.5rem 2rem 5rem;}
+.doc-body h2{font-size:1.15rem;font-weight:700;color:var(--ink);margin:2.5rem 0 0.75rem;padding-top:2.5rem;border-top:1px solid var(--border);}
+.doc-body h2:first-child{border-top:none;padding-top:0;margin-top:0;}
+.doc-body p{color:var(--ink-mid);margin-bottom:1rem;}
+.doc-body ul{color:var(--ink-mid);padding-left:1.5rem;margin-bottom:1rem;}
+.doc-body ul li{margin-bottom:0.4rem;}
+.doc-body strong{color:var(--ink);font-weight:600;}
+.doc-body a{color:var(--green);font-weight:600;text-decoration:none;}
+.doc-body a:hover{text-decoration:underline;}
+.notice-box{background:var(--green-pale);border:1px solid rgba(20,103,58,0.18);border-radius:8px;padding:1.25rem 1.375rem;margin-bottom:2rem;}
+.notice-box p{color:var(--green-dark);margin:0;font-size:0.9rem;}
+.contact-block{background:var(--off-white);border:1px solid var(--border);border-radius:8px;padding:1.375rem 1.5rem;margin-top:1rem;}
+.contact-block p{margin:0 0 0.3rem;color:var(--ink-mid);font-size:0.9rem;}
+.contact-block p:last-child{margin:0;}
+.contact-block a{color:var(--green);text-decoration:none;font-weight:600;}
+.highlight-box{background:var(--off-white);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:0 8px 8px 0;padding:1.25rem 1.375rem;margin:1.5rem 0;}
+.highlight-box p{color:var(--ink-mid);margin:0;font-size:0.9rem;}
+
+.footer-s{background:var(--navy);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;border-top:1px solid rgba(255,255,255,0.07);}
+.footer-s-logo{font-weight:800;font-size:0.9rem;color:rgba(255,255,255,0.5);letter-spacing:-0.02em;}
+.footer-s-logo .dot{color:#16A34A;}
+.footer-s-copy{font-size:0.75rem;color:rgba(255,255,255,0.28);}
+
+.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45),0 2px 8px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s;color:#fff;}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,0.55),0 3px 10px rgba(0,0,0,.2);}
+.wa-float svg{width:28px;height:28px;}
+
+@media(max-width:600px){
+  .doc-body{padding:2.5rem 1.25rem 4rem;}
+  .hero-legal{padding:2.5rem 1.25rem 2rem;}
+  nav{padding:0 1.25rem;}
+  .footer-s{padding:1.25rem;flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body id="b" class="len">
+
+<nav>
+  <a href="index.html" class="nav-logo">The <span class="dot">Right</span> Bill</a>
+  <div class="nav-right">
+    <div class="lang-pill">
+      <button class="lbtn on" onclick="setL('en')">EN</button>
+      <button class="lbtn" onclick="setL('es')">ES</button>
+    </div>
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      <span class="t en">Back</span>
+      <span class="t es">Volver</span>
+    </a>
+  </div>
+</nav>
+
+<div class="hero-legal">
+  <div class="hero-legal-inner">
+    <div class="doc-type t en">Legal document</div>
+    <div class="doc-type t es">Documento legal</div>
+    <h1 class="t en">Privacy Policy</h1>
+    <h1 class="t es">Política de Privacidad</h1>
+    <p class="meta t en">Last updated: May 28, 2026 &nbsp;·&nbsp; Effective: May 28, 2026</p>
+    <p class="meta t es">Última actualización: 28 de mayo de 2026 &nbsp;·&nbsp; Vigente desde: 28 de mayo de 2026</p>
+  </div>
+</div>
+
+<div class="doc-body">
+
+  <div class="notice-box t en">
+    <p><strong>Summary:</strong> The Right Bill only collects data strictly necessary to provide the bill negotiation service. We never sell personal data to third parties. You may request access, correction, or deletion of your data by writing to <a href="mailto:sales@therightbill.com" style="color:var(--green-dark);font-weight:600;">sales@therightbill.com</a>.</p>
+  </div>
+  <div class="notice-box t es">
+    <p><strong>Resumen:</strong> The Right Bill recoge únicamente los datos estrictamente necesarios para prestar el servicio de negociación de facturas. No vendemos datos personales a terceros. Puedes solicitar el acceso, rectificación o eliminación de tus datos escribiendo a <a href="mailto:sales@therightbill.com" style="color:var(--green-dark);font-weight:600;">sales@therightbill.com</a>.</p>
+  </div>
+
+  <!-- 1 -->
+  <h2 class="t en">1. Data Controller</h2>
+  <h2 class="t es">1. Responsable del tratamiento</h2>
+  <p class="t en">The controller responsible for personal data collected through this website and in connection with the services offered is:</p>
+  <p class="t es">El responsable del tratamiento de los datos personales recogidos a través de este sitio web y en el marco de los servicios ofrecidos es:</p>
+  <div class="contact-block">
+    <p><strong>Jorge Chamorro</strong>, <span class="t en">doing business as</span><span class="t es">actuando bajo el nombre comercial</span> <strong>The Right Bill</strong></p>
+    <p>650 NE 2nd Avenue, Miami, Florida 33132, U.S.A.</p>
+    <p><span class="t en">Email:</span><span class="t es">Correo electrónico:</span> <a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p><span class="t en">Phone:</span><span class="t es">Teléfono:</span> <a href="tel:+17866900756">+1 (786) 690-0756</a></p>
+  </div>
+  <p class="t en" style="margin-top:1rem;">The Right Bill operates as a sole proprietor (DBA) under the laws of the State of Florida, U.S.A. No separate legal entity exists apart from the owner.</p>
+  <p class="t es" style="margin-top:1rem;">The Right Bill opera como persona física bajo nombre comercial (sole proprietor / DBA) conforme a la legislación del Estado de Florida, EE.UU. No existe una entidad jurídica separada.</p>
+
+  <!-- 2 -->
+  <h2 class="t en">2. Data We Collect and Why</h2>
+  <h2 class="t es">2. Datos que recopilamos y por qué</h2>
+  <p class="t en">We collect only the data that users voluntarily provide when using the contact form or engaging our negotiation services:</p>
+  <p class="t es">Recopilamos exclusivamente los datos que el usuario facilita de manera voluntaria al utilizar el formulario de contacto o al contratar nuestros servicios de negociación:</p>
+  <ul class="t en">
+    <li><strong>Name:</strong> to identify the client and communicate with them personally.</li>
+    <li><strong>Phone number:</strong> to contact the client within the committed timeframe and coordinate the negotiation.</li>
+    <li><strong>Company name</strong> (if provided): to tailor the analysis to business accounts.</li>
+    <li><strong>Current telecommunications provider:</strong> to assess the available negotiating margin.</li>
+    <li><strong>Approximate monthly bill amount:</strong> to generate the savings estimate.</li>
+    <li><strong>Email address</strong> (when voluntarily provided): for communications related to the service.</li>
+    <li><strong>Bill or contract information</strong> (if the client voluntarily shares it): to analyze negotiable charges. This information is never shared with third parties.</li>
+  </ul>
+  <ul class="t es">
+    <li><strong>Nombre:</strong> para identificar al cliente y dirigirnos a él de forma personalizada.</li>
+    <li><strong>Número de teléfono:</strong> para contactarle en el plazo indicado y coordinar la negociación.</li>
+    <li><strong>Nombre de empresa</strong> (si se facilita): para adaptar el análisis a cuentas empresariales.</li>
+    <li><strong>Proveedor de telecomunicaciones actual:</strong> para analizar el margen de negociación disponible.</li>
+    <li><strong>Importe de la factura mensual aproximado:</strong> para realizar la estimación de ahorro.</li>
+    <li><strong>Dirección de correo electrónico</strong> (cuando se facilite voluntariamente): para comunicaciones relacionadas con el servicio.</li>
+    <li><strong>Información de factura o contrato</strong> (si el cliente la comparte voluntariamente): para analizar los cargos negociables. Esta información nunca se comparte con terceros.</li>
+  </ul>
+  <p class="t en"><strong>We do not collect</strong> Social Security numbers, banking details, passwords, or login credentials for provider accounts. When acting as the client's authorized agent to contact the provider, we do so exclusively by phone, identifying ourselves as the client's representative with their express authorization.</p>
+  <p class="t es"><strong>No recopilamos</strong> números de la Seguridad Social, datos bancarios, contraseñas ni credenciales de acceso a cuentas de proveedores. Cuando actuamos como agente autorizado del cliente para llamar al proveedor, lo hacemos exclusivamente por teléfono, identificándonos como representantes del cliente con su autorización expresa.</p>
+
+  <!-- 3 -->
+  <h2 class="t en">3. Legal Basis for Processing</h2>
+  <h2 class="t es">3. Base jurídica del tratamiento</h2>
+  <p class="t en">The processing of personal data is based on the following legal grounds under Florida and applicable federal law:</p>
+  <p class="t es">El tratamiento de los datos personales se basa en las siguientes bases jurídicas conforme a la legislación de Florida y la legislación federal aplicable:</p>
+  <ul class="t en">
+    <li><strong>Contract performance:</strong> data is necessary to provide the negotiation service requested by the user.</li>
+    <li><strong>Consent:</strong> by completing the contact form, the user expressly consents to their data being processed for the stated purpose.</li>
+    <li><strong>Legitimate interest:</strong> for follow-up communications directly related to an accepted engagement.</li>
+  </ul>
+  <ul class="t es">
+    <li><strong>Ejecución del contrato de servicio:</strong> los datos son necesarios para prestar el servicio de negociación solicitado por el usuario.</li>
+    <li><strong>Consentimiento del interesado:</strong> al cumplimentar el formulario de contacto, el usuario presta su consentimiento expreso para que sus datos sean tratados con la finalidad indicada.</li>
+    <li><strong>Interés legítimo:</strong> para comunicaciones de seguimiento directamente relacionadas con el encargo aceptado.</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2 class="t en">4. How We Use Your Data</h2>
+  <h2 class="t es">4. Cómo usamos sus datos</h2>
+  <p class="t en">Collected data is used exclusively to:</p>
+  <p class="t es">Los datos recogidos se utilizan exclusivamente para:</p>
+  <ul class="t en">
+    <li>Contact the user within the committed timeframe (maximum 24 hours) to begin the bill analysis.</li>
+    <li>Carry out the negotiation with the user's telecommunications provider, acting as their authorized agent.</li>
+    <li>Communicate the negotiation result and, where applicable, the corresponding service fee invoice.</li>
+    <li>Address inquiries, complaints, or requests from the user related to the service provided.</li>
+  </ul>
+  <ul class="t es">
+    <li>Contactar al usuario en el plazo comprometido (máximo 24 horas) para iniciar el análisis de su factura.</li>
+    <li>Llevar a cabo la negociación con el proveedor de telecomunicaciones del usuario, actuando como su agente autorizado.</li>
+    <li>Comunicar al usuario el resultado de la negociación y, en su caso, la factura de honorarios correspondiente.</li>
+    <li>Atender consultas, reclamaciones o solicitudes del usuario relacionadas con el servicio prestado.</li>
+  </ul>
+  <p class="t en"><strong>We do not use data for third-party marketing, behavioral advertising, or profiling.</strong></p>
+  <p class="t es"><strong>No utilizamos los datos para marketing de terceros, publicidad comportamental ni creación de perfiles.</strong></p>
+
+  <!-- 5 -->
+  <h2 class="t en">5. Data Sharing with Third Parties</h2>
+  <h2 class="t es">5. Compartición de datos con terceros</h2>
+  <p class="t en">The Right Bill does not sell, rent, or transfer personal data to third parties for commercial purposes. Data may only be shared in the following limited circumstances:</p>
+  <p class="t es">The Right Bill no vende, alquila ni cede datos personales a terceros con fines comerciales. Los datos únicamente pueden ser compartidos en los siguientes supuestos limitados:</p>
+  <ul class="t en">
+    <li><strong>With the user's telecommunications provider</strong>, only when strictly necessary to execute the negotiation and always with the client's express authorization.</li>
+    <li><strong>With technical service providers</strong> (web hosting, email) acting as data processors under confidentiality agreements and with access only to the minimum data required.</li>
+    <li><strong>By legal obligation:</strong> when required by a competent authority via court order or binding legal mandate.</li>
+  </ul>
+  <ul class="t es">
+    <li><strong>Con el proveedor de telecomunicaciones del usuario</strong>, cuando sea estrictamente necesario para ejecutar la negociación y siempre con la autorización expresa del cliente.</li>
+    <li><strong>Con proveedores de servicios técnicos</strong> (alojamiento web, correo electrónico) que actúen como encargados del tratamiento bajo acuerdos de confidencialidad y solo con acceso a los datos mínimos indispensables.</li>
+    <li><strong>Por obligación legal:</strong> cuando una autoridad competente lo requiera mediante mandato judicial o requerimiento legal vinculante.</li>
+  </ul>
+
+  <!-- 6 -->
+  <h2 class="t en">6. Data Retention</h2>
+  <h2 class="t es">6. Plazo de conservación de los datos</h2>
+  <p class="t en">Personal data will be retained for the time necessary to fulfill the purpose for which it was collected and in accordance with applicable legal retention periods:</p>
+  <p class="t es">Los datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recogidos y durante los plazos legales aplicables:</p>
+  <ul class="t en">
+    <li>Data of clients for whom services were rendered: <strong>4 years</strong> from the completion of the engagement, in accordance with the statute of limitations for civil actions in Florida (Fla. Stat. § 95.11).</li>
+    <li>Data of contacts who did not become clients: <strong>12 months</strong> from first contact, unless the user requests deletion earlier.</li>
+    <li>Billing data: as required by applicable tax law.</li>
+  </ul>
+  <ul class="t es">
+    <li>Datos de clientes con los que se ha prestado el servicio: <strong>4 años</strong> desde la finalización del servicio, conforme a los plazos de prescripción de acciones civiles en Florida (Fla. Stat. § 95.11).</li>
+    <li>Datos de contactos que no se convirtieron en clientes: <strong>12 meses</strong> desde el primer contacto, salvo que el usuario solicite su eliminación antes.</li>
+    <li>Datos de facturación: el tiempo que exija la normativa fiscal aplicable.</li>
+  </ul>
+  <p class="t en">After these periods, data will be deleted or irreversibly anonymized.</p>
+  <p class="t es">Transcurridos estos plazos, los datos serán eliminados o anonimizados de forma irreversible.</p>
+
+  <!-- 7 -->
+  <h2 class="t en">7. Your Privacy Rights</h2>
+  <h2 class="t es">7. Derechos del usuario</h2>
+  <p class="t en">Depending on your state of residence, you may have the following rights regarding your personal data:</p>
+  <p class="t es">Dependiendo de su estado de residencia, puede tener los siguientes derechos con respecto a sus datos personales:</p>
+  <ul class="t en">
+    <li><strong>Access:</strong> the right to know what personal data we hold about you.</li>
+    <li><strong>Correction:</strong> the right to correct inaccurate or incomplete data.</li>
+    <li><strong>Deletion:</strong> the right to request erasure of your data when no longer necessary for the purpose for which it was collected.</li>
+    <li><strong>Restriction:</strong> the right to limit processing in legally prescribed circumstances.</li>
+    <li><strong>Opt-out of sale or sharing:</strong> The Right Bill does not sell or share personal data for targeted advertising.</li>
+    <li><strong>Portability:</strong> the right to receive your data in a machine-readable format.</li>
+    <li><strong>Withdraw consent</strong> at any time, without affecting the lawfulness of prior processing.</li>
+  </ul>
+  <ul class="t es">
+    <li><strong>Acceder</strong> a los datos personales que obran en nuestro poder.</li>
+    <li><strong>Rectificar</strong> datos inexactos o incompletos.</li>
+    <li><strong>Eliminar</strong> sus datos, cuando ya no sean necesarios para la finalidad con que fueron recogidos.</li>
+    <li><strong>Limitar</strong> el tratamiento en los supuestos legalmente previstos.</li>
+    <li><strong>Oponerse a la venta o cesión:</strong> The Right Bill no vende ni cede datos para publicidad dirigida.</li>
+    <li><strong>Portabilidad</strong> de sus datos en formato legible por máquina.</li>
+    <li><strong>Retirar el consentimiento</strong> en cualquier momento, sin que ello afecte a la licitud del tratamiento previo.</li>
+  </ul>
+  <p class="t en">To exercise any of these rights, submit a written request to:</p>
+  <p class="t es">Para ejercer cualquiera de estos derechos, el usuario puede enviar una solicitud escrita a:</p>
+  <div class="contact-block">
+    <p><a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p><span class="t en">Subject: Privacy Rights Request — The Right Bill</span><span class="t es">Asunto: Solicitud de derechos de privacidad — The Right Bill</span></p>
+  </div>
+  <p class="t en" style="margin-top:1rem;">We will respond within <strong>45 days</strong> of receiving the request, as required by the Florida Digital Bill of Rights.</p>
+  <p class="t es" style="margin-top:1rem;">Responderemos en un plazo máximo de <strong>45 días</strong> desde la recepción de la solicitud, conforme a lo exigido por la Florida Digital Bill of Rights.</p>
+
+  <!-- 8 — Florida Digital Bill of Rights -->
+  <h2 class="t en">8. Florida Digital Bill of Rights (FDBR)</h2>
+  <h2 class="t es">8. Florida Digital Bill of Rights (FDBR)</h2>
+  <div class="highlight-box t en">
+    <p>The Florida Digital Bill of Rights (Ch. 2023-14, Laws of Florida, effective July 1, 2023) grants Florida consumers specific privacy rights regarding their personal data. The Right Bill complies with the FDBR to the extent applicable to its operations.</p>
+  </div>
+  <div class="highlight-box t es">
+    <p>La Florida Digital Bill of Rights (Cap. 2023-14, Leyes de Florida, en vigor desde el 1 de julio de 2023) otorga a los consumidores de Florida derechos específicos sobre sus datos personales. The Right Bill cumple con la FDBR en la medida aplicable a sus operaciones.</p>
+  </div>
+  <p class="t en">Under the FDBR, Florida residents have the right to:</p>
+  <p class="t es">En virtud de la FDBR, los residentes de Florida tienen derecho a:</p>
+  <ul class="t en">
+    <li>Know what personal data is being collected about them and for what purpose.</li>
+    <li>Access the personal data a business holds about them.</li>
+    <li>Correct inaccurate personal data.</li>
+    <li>Delete personal data provided by or obtained about the consumer.</li>
+    <li>Obtain a portable copy of their personal data.</li>
+    <li>Opt out of the processing of personal data for targeted advertising, the sale of personal data, or profiling in furtherance of solely automated decisions that produce legal or similarly significant effects.</li>
+  </ul>
+  <ul class="t es">
+    <li>Saber qué datos personales se recopilan sobre ellos y con qué finalidad.</li>
+    <li>Acceder a los datos personales que una empresa posee sobre ellos.</li>
+    <li>Corregir datos personales inexactos.</li>
+    <li>Eliminar datos personales proporcionados por el consumidor u obtenidos sobre él.</li>
+    <li>Obtener una copia portátil de sus datos personales.</li>
+    <li>Rechazar el tratamiento de datos personales para publicidad dirigida, la venta de datos personales o la elaboración de perfiles con fines exclusivamente automatizados que produzcan efectos jurídicos o igualmente significativos.</li>
+  </ul>
+  <p class="t en"><strong>The Right Bill does not sell personal data, does not use personal data for targeted advertising, and does not engage in automated profiling.</strong> To exercise any right under the FDBR, contact us at <a href="mailto:sales@therightbill.com">sales@therightbill.com</a> with the subject line "FDBR Privacy Request". We will respond within 45 days. If we are unable to fulfill a request within that period, we will notify you and may extend the response deadline by an additional 45 days with explanation.</p>
+  <p class="t es"><strong>The Right Bill no vende datos personales, no utiliza datos personales para publicidad dirigida y no realiza perfiles automatizados.</strong> Para ejercer cualquier derecho bajo la FDBR, contáctenos en <a href="mailto:sales@therightbill.com">sales@therightbill.com</a> con el asunto «Solicitud de privacidad FDBR». Responderemos en un plazo de 45 días. Si no pudiéramos atender la solicitud en ese plazo, se lo notificaremos y podremos ampliar el plazo de respuesta otros 45 días adicionales con explicación.</p>
+
+  <!-- 9 -->
+  <h2 class="t en">9. Data Security</h2>
+  <h2 class="t es">9. Seguridad de los datos</h2>
+  <p class="t en">The Right Bill implements reasonable technical and organizational measures to protect personal data against unauthorized access, loss, destruction, or unlawful processing. These measures include encrypted data transmission (HTTPS), restricted access to client information, and secure disposal of sensitive documentation upon completion of an engagement.</p>
+  <p class="t es">The Right Bill aplica medidas técnicas y organizativas razonables para proteger los datos personales contra el acceso no autorizado, la pérdida, la destrucción o el tratamiento ilícito. Estas medidas incluyen la transmisión cifrada de datos (HTTPS), el acceso restringido a la información del cliente y la eliminación segura de documentación sensible una vez concluido el encargo.</p>
+  <p class="t en">No Internet transmission system is completely secure. The Right Bill cannot guarantee the absolute security of information transmitted over the Internet.</p>
+  <p class="t es">Ningún sistema de transmisión por Internet es completamente seguro. The Right Bill no puede garantizar la seguridad absoluta de la información transmitida a través de Internet.</p>
+
+  <!-- 10 -->
+  <h2 class="t en">10. Cookies and Tracking Technologies</h2>
+  <h2 class="t es">10. Cookies y tecnologías de seguimiento</h2>
+  <p class="t en">This website uses <strong>Google Analytics 4</strong> (GA4), a web analytics service provided by Google LLC, to collect anonymous data about site usage (pages visited, session duration, country of access). Google Analytics uses first-party cookies for this purpose. Data is transmitted to Google servers in the U.S. and processed in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. The Right Bill does not link Google Analytics data to any personally identifiable information.</p>
+  <p class="t es">Este sitio web utiliza <strong>Google Analytics 4</strong> (GA4), un servicio de análisis web proporcionado por Google LLC, para recopilar información anónima sobre el uso del sitio (páginas visitadas, duración de la sesión, país de acceso). Google Analytics utiliza cookies propias para este fin. Los datos se transmiten a servidores de Google en EE.UU. y se tratan de conformidad con la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>. The Right Bill no vincula los datos de Google Analytics con datos personales identificables.</p>
+  <p class="t en">The site may also use strictly necessary technical cookies (e.g., to remember the user's language preference). No third-party advertising or behavioral tracking cookies are used beyond Google Analytics.</p>
+  <p class="t es">Adicionalmente, el sitio puede utilizar cookies técnicas estrictamente necesarias (por ejemplo, para recordar la preferencia de idioma del usuario). No se utilizan cookies de terceros con fines publicitarios ni de seguimiento comportamental más allá de Google Analytics.</p>
+  <p class="t en">Users can configure their browser to reject or delete cookies, or use the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a> to disable GA4 tracking. Disabling technical cookies may affect the functionality of certain Site features.</p>
+  <p class="t es">El usuario puede configurar su navegador para rechazar o eliminar cookies, o utilizar el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">complemento de inhabilitación de Google Analytics</a> para desactivar el seguimiento de GA4. La desactivación de cookies técnicas puede afectar al funcionamiento de algunas funcionalidades del sitio.</p>
+
+  <!-- 11 -->
+  <h2 class="t en">11. Minors</h2>
+  <h2 class="t es">11. Usuarios menores de edad</h2>
+  <p class="t en">The Right Bill's services are intended exclusively for individuals 18 years of age or older. We do not knowingly collect data from minors. If we become aware that a minor has submitted data without parental or guardian consent, we will delete it immediately.</p>
+  <p class="t es">Los servicios de The Right Bill están destinados exclusivamente a mayores de 18 años. No recopilamos conscientemente datos de menores de edad. Si tuviéramos conocimiento de que un menor ha facilitado datos sin el consentimiento de sus tutores, procederemos a eliminarlos de inmediato.</p>
+
+  <!-- 12 -->
+  <h2 class="t en">12. International Data Transfers</h2>
+  <h2 class="t es">12. Transferencias internacionales de datos</h2>
+  <p class="t en">Personal data is stored and processed on servers located within the United States. The Right Bill does not transfer personal data to countries or territories that do not offer an adequate level of protection. Should the use of technology providers involve any transfer outside the U.S., we will ensure that appropriate contractual safeguards are in place.</p>
+  <p class="t es">Los datos personales se almacenan y tratan en servidores ubicados en los Estados Unidos. The Right Bill no realiza transferencias de datos personales a países que no ofrezcan un nivel de protección adecuado. En caso de que el uso de proveedores tecnológicos implique alguna transferencia fuera de EE.UU., nos aseguraremos de que existan las salvaguardas contractuales oportunas.</p>
+
+  <!-- 13 -->
+  <h2 class="t en">13. Changes to This Policy</h2>
+  <h2 class="t es">13. Cambios en esta política</h2>
+  <p class="t en">The Right Bill reserves the right to modify this Privacy Policy to reflect changes in law, regulatory guidance, or business practices. For material changes, users will be notified via the Site or by email if we hold their address. The "Last updated" date at the top of this document will always reflect the current version.</p>
+  <p class="t es">The Right Bill se reserva el derecho a modificar esta Política de Privacidad para adaptarla a cambios legislativos, jurisprudenciales o de la práctica del negocio. En caso de cambios sustanciales, se notificará a los usuarios a través del sitio web o por correo electrónico si dispusiéramos de su dirección. La fecha de «última actualización» que figura al inicio del documento reflejará siempre la versión vigente.</p>
+
+  <!-- 14 -->
+  <h2 class="t en">14. Governing Law and Jurisdiction</h2>
+  <h2 class="t es">14. Legislación aplicable y jurisdicción</h2>
+  <p class="t en">This Privacy Policy is governed by the laws of the State of Florida and applicable federal law of the United States. Any dispute arising from its interpretation or application shall be subject to the exclusive jurisdiction of the state and federal courts located in Miami-Dade County, Florida, and each party irrevocably submits to the personal jurisdiction of such courts.</p>
+  <p class="t es">Esta Política de Privacidad se rige por la legislación del Estado de Florida y la legislación federal de los Estados Unidos aplicable. Para cualquier controversia derivada de su interpretación o aplicación, las partes se someten a la jurisdicción exclusiva de los tribunales del Condado de Miami-Dade, Florida, EE.UU., con renuncia expresa a cualquier otro fuero que pudiera corresponderles.</p>
+
+  <!-- 15 -->
+  <h2 class="t en">15. Contact</h2>
+  <h2 class="t es">15. Contacto</h2>
+  <p class="t en">For any questions related to this Privacy Policy or the processing of your personal data, please contact us at:</p>
+  <p class="t es">Para cualquier consulta relacionada con esta Política de Privacidad o con el tratamiento de sus datos personales, puede contactar con nosotros en:</p>
+  <div class="contact-block">
+    <p><strong>The Right Bill</strong> (Jorge Chamorro, <span class="t en">owner</span><span class="t es">propietario</span>)</p>
+    <p>650 NE 2nd Avenue, Miami, Florida 33132, U.S.A.</p>
+    <p><a href="mailto:sales@therightbill.com">sales@therightbill.com</a></p>
+    <p><a href="tel:+17866900756">+1 (786) 690-0756</a></p>
+  </div>
+
+</div>
+
+<div class="footer-s">
+  <div class="footer-s-logo">The <span class="dot">Right</span> Bill</div>
+  <div class="footer-s-copy">© 2026 The Right Bill · Miami, Florida</div>
+</div>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/17866900756" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+function setL(l) {
+  document.documentElement.lang = l === 'en' ? 'en-US' : 'es-US';
+  document.getElementById('b').className = l === 'en' ? 'len' : 'les';
+  document.querySelectorAll('.lbtn').forEach(b => b.classList.toggle('on', b.textContent.toLowerCase() === l));
+}
+setL('en');
+</script>
+</body>
+</html>
